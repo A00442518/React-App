@@ -1,9 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import Province from './components/component1';
 import About_me from './components/component2';
 import React, { Component } from 'react';
-import { render } from '@testing-library/react';
 
 
 
