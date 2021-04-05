@@ -38,7 +38,7 @@ class Province extends Component{
     render(){
         return(
             <div className='component1-container'>
-                <img src="https://ffo.gov.in/uploads/location_photos/2018/10/Sheesh-Mahal-Patiala1359-768x330.jpg" alt="image"></img>
+                <img src="https://ffo.gov.in/uploads/location_photos/2018/10/Sheesh-Mahal-Patiala1359-768x330.jpg" alt="fort"></img>
                 <h1>I live in Patiala, Punjab.</h1>
                 <h3 >Patiala is a small town of Punjab state in nothern parts of India.</h3>
                 <div>
