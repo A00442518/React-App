@@ -1,25 +1,33 @@
 import logo from './logo.svg';
 import './App.css';
+import Province from './components/component1';
+import About_me from './components/component2';
+import React, { Component } from 'react';
+import { render } from '@testing-library/react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+class App extends Component {
+  constructor(props){
+    super(props)
+
+  this.state = {
+    page:'h'
+  }
+}
+  render(){
+    return (
+      <div className="App">
+        <header className="App-header">
+          <div className='menu'>
+            <a className="App-link" href="#" onClick={()=>{this.setState({page:'h'})}}>About me</a>&emsp;
+            <a className="App-link" href="#" onClick={()=>{this.setState({page:'c'})}}>My Town</a>
+          </div>
+          {this.state.page==='h' ? <About_me /> : <Province />}
+        </header>
+      </div>
+    );
+  }
 }
 
 export default App;
