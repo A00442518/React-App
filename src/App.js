@@ -1,6 +1,6 @@
 import './App.css';
 import Province from './components/component1';
-import About_me from './components/component2';
+import AboutMe from './components/component2';
 import React, { Component } from 'react';
 
 
@@ -21,7 +21,7 @@ class App extends Component {
             <a className="App-link" href="#" onClick={()=>{this.setState({page:'h'})}}>About me</a>&emsp;
             <a className="App-link" href="#" onClick={()=>{this.setState({page:'c'})}}>My Town</a>
           </div>
-          {this.state.page==='h' ? <About_me /> : <Province />}
+          {this.state.page==='h' ? <AboutMe /> : <Province />}
         </header>
       </div>
     );
