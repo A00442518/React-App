@@ -18,8 +18,8 @@ class App extends Component {
             <div className="App">
                 <header className="App-header">
                     <div className='menu'>
-                        <a className="App-link" href="#" onClick={() => { this.setState({ page: 'h' }) }}>About me</a>&emsp;
-            <a className="App-link" href="#" onClick={() => { this.setState({ page: 'c' }) }}>My Town</a>
+                        <p className="App-link" onClick={() => { this.setState({ page: 'h' }) }}>About me</p>&emsp;
+                        <p className="App-link" onClick={() => { this.setState({ page: 'c' }) }}>My Town</p>
                     </div>
                     {this.state.page === 'h' ? <AboutMe /> : <Province />}
                 </header>
